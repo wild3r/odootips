@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="sale.view_quotation_tree"/>
             <field name="arch" type="xml">
                 <field name="amount_total" position="after">
-                    <field name="amount_tax" sum="Total Tax Included"/>
+                    <field name="amount_tax" sum="Total Amount"/>
                 </field>
             </field>
         </record>
