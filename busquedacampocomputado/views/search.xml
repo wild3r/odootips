@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="sale_order_search_inherit">
+            <field name="name">sale_order_search.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="inside">
+                    <field string="Cantidad de ventas" name="cliente_total_sale_order"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
